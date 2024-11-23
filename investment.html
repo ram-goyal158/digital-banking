@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment & Insurance</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #77f3b3;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgb(194, 248, 202);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #005bb5;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+}
+
+p, ul {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+strong {
+    color: #005bb5;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #005bb5;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0073e6;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: #005bb5;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Banking - Investment & Insurance</h1>
+        <p>Secure your future with our investment and insurance plans.</p>
+    </header>
+
+    <main>
+        <section class="investment">
+            <h2>Investment Options</h2>
+            <p>Explore our diverse range of investment opportunities to grow your wealth:</p>
+            <ul>
+                <li><strong>Mutual Funds:</strong> High returns with diversified portfolio management.</li>
+                <li><strong>Fixed Deposits (FDs):</strong> Secure investments with guaranteed returns.</li>
+                <li><strong>Stock Trading:</strong> Direct market access with expert tools and insights.</li>
+                <li><strong>Bonds:</strong> Stable returns with government and corporate bonds.</li>
+                <li><strong>Retirement Plans:</strong> Plan your future with long-term retirement savings.</li>
+            </ul>
+        </section>
+
+        <section class="insurance">
+            <h2>Insurance Plans</h2>
+            <p>Choose from a variety of insurance plans to protect your loved ones:</p>
+            <ul>
+                <li><strong>Health Insurance:</strong> Comprehensive coverage for medical expenses.</li>
+                <li><strong>Life Insurance:</strong> Financial security for your family in case of unforeseen events.</li>
+                <li><strong>Travel Insurance:</strong> Hassle-free travel with coverage for emergencies.</li>
+                <li><strong>Vehicle Insurance:</strong> Protect your car or bike against damage and theft.</li>
+                <li><strong>Home Insurance:</strong> Secure your home against natural and man-made risks.</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <p>Interested in our investment or insurance options? Fill out the form below, and our team will contact you:</p>
+            <form action="/submit_inquiry" method="POST">
+                <!-- Full Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <!-- Phone -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                
+                <!-- Inquiry Type -->
+                <label for="inquiry-type">I am interested in:</label>
+                <select id="inquiry-type" name="inquiry-type" required>
+                    <option value="investment">Investment Options</option>
+                    <option value="insurance">Insurance Plans</option>
+                </select>
+                
+                <!-- Message -->
+                <label for="message">Message (optional):</label>
+                <textarea id="message" name="message" placeholder="Enter any additional details or questions"></textarea>
+                
+                <!-- Submit Button -->
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digit Bank. All rights reserved.</p>
+    </footer>
+</body>
+</html>

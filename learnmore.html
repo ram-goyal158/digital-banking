@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Styling */
+.learn-more {
+    background-color: #b7f9d5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.learn-more .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.learn-more h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.learn-more p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #a3eba3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #0044cc;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #0033aa;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .learn-more h2 {
+        font-size: 2rem;
+    }
+
+    .learn-more p {
+        font-size: 1rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section id="learn-more" class="learn-more">
+        <div class="container">
+            <h2>Learn More About Our Digital Banking Services</h2>
+            <p>Discover how we’re revolutionizing banking with cutting-edge technology that gives you secure, convenient, and accessible financial management right at your fingertips.</p>
+            
+            <div class="cards-container">
+                <!-- Card 1: Secure Transactions -->
+                <div class="card">
+                    <img src="secure transactions.jpeg" alt="Secure Transactions" class="card-img">
+                    <h3>Secure Transactions</h3>
+                    <p>Your security is our top priority. We use the latest encryption methods to ensure your financial transactions are always safe and secure.</p>
+                    <a href="secure-transactions.html" class="btn">Learn More</a>
+                </div>
+    
+                <!-- Card 2: Instant Transfers -->
+                <div class="card">
+                    <img src="instant transfer.jpeg" alt="Instant Transfers" class="card-img">
+                    <h3>Instant Transfers</h3>
+                    <p>Transfer money instantly, anytime, anywhere, with just a few clicks. No more waiting, just fast and reliable payments.</p>
+                    <a href="instant-transfers.html" class="btn">Learn More</a>
+                </div>
+    
+                <!-- Card 3: 24/7 Customer Support -->
+                <div class="card">
+                    <img src="247customer support.jpeg" alt="24/7 Customer Support" class="card-img">
+                    <h3>24/7 Customer Support</h3>
+                    <p>Our customer service team is available round the clock to help you with any queries or issues you may face.</p>
+                    <a href="customer-support.html" class="btn">Learn More</a>
+                </div>
+    
+                <!-- Card 4: Expense Tracking -->
+                <div class="card">
+                    <img src="expence tracking.jpeg" alt="Expense Tracking" class="card-img">
+                    <h3>Expense Tracking</h3>
+                    <p>Keep track of your spending with real-time expense tracking tools that help you manage your budget effectively.</p>
+                    <a href="expense-tracking.html" class="btn">Learn More</a>
+                </div>
+    
+                <!-- Card 5: Investment Options -->
+                <div class="card">
+                    <img src="investment option.jpeg" alt="Investment Options" class="card-img">
+                    <h3>Investment Options</h3>
+                    <p>Grow your wealth with easy access to a variety of investment options directly through our platform.</p>
+                    <a href="investment-options.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

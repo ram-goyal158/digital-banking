@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for a Loan</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #77f58a;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #005bb5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgb(180, 248, 191);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.loan-form h2 {
+    color: #005bb5;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #005bb5;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0073e6;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: #005bb5;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Banking - Loan Application</h1>
+        <p>Apply for a personal, home, or business loan with ease.</p>
+    </header>
+
+    <main>
+        <section class="loan-form">
+            <h2>Loan Application Form</h2>
+            <form action="/submit_loan_application" method="POST">
+                <!-- Full Name -->
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <!-- Phone -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                
+                <!-- Loan Type -->
+                <label for="loan-type">Type of Loan:</label>
+                <select id="loan-type" name="loan-type" required>
+                    <option value="personal-loan">Personal Loan</option>
+                    <option value="home-loan">Home Loan</option>
+                    <option value="business-loan">Business Loan</option>
+                    <option value="education-loan">Education Loan</option>
+                </select>
+                
+                <!-- Loan Amount -->
+                <label for="loan-amount">Loan Amount (in USD):</label>
+                <input type="number" id="loan-amount" name="loan-amount" placeholder="Enter the loan amount" required>
+                
+                <!-- Loan Tenure -->
+                <label for="loan-tenure">Loan Tenure (in years):</label>
+                <input type="number" id="loan-tenure" name="loan-tenure" placeholder="Enter the loan tenure" required>
+                
+                <!-- Employment Status -->
+                <label for="employment-status">Employment Status:</label>
+                <select id="employment-status" name="employment-status" required>
+                    <option value="salaried">Salaried</option>
+                    <option value="self-employed">Self-Employed</option>
+                    <option value="student">Student</option>
+                    <option value="unemployed">Unemployed</option>
+                </select>
+                
+                <!-- Income Details -->
+                <label for="income">Monthly Income (in USD):</label>
+                <input type="number" id="income" name="income" placeholder="Enter your monthly income" required>
+                
+                <!-- Submit Button -->
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digit Bank. All rights reserved.</p>
+    </footer>
+</body>
+</html>
